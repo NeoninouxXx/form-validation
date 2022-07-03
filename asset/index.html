@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="form">
+        <div class="row">
+          <div class="mb-3 col-md-6">
+            <label for="Name" class="form-label">Nom</label>
+            <input
+              type="text"
+              class="form-control needs-validation-text"
+              id="Name"
+
+            />
+            <div class="invalid-feedback">Champ obligatoire, en toute lettres.</div>
+          </div>
+          <div class="mb-3 col-md-6">
+            <label for="Prénom" class="form-label">Prénom</label>
+            <input
+              type="text"
+              class="form-control needs-validation-text"
+              id="Prénom"
+            />
+            <div class="invalid-feedback">Champ obligatoire, en toute lettres.</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="mb-3 col-md-6">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control needs-validation-email"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+            <div class="invalid-feedback">Entrez votre adresse email.</div>
+            
+            
+          </div>
+          <div class="mb-3 col-md-6">
+            <label for="exampleInputPassword1" class="form-label"
+              >Mot de passe</label
+            >
+            <input
+              type="password"
+              class="form-control needs-validation-passwOrd"
+              id="exampleInputPassword1"
+            />
+            <div class="invalid-feedback">champ obligatoire doit contenir au moins 6 characteres.</div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            <label class="form-check-label" for="flexCheckDefault">
+             J'accepte les conditions
+            </label>
+            
+        </div>
+        <button type="submit" class="btn btn-primary">Validé</button>
+      </form>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
